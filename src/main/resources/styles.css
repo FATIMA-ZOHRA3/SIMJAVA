@@ -1,0 +1,134 @@
+/* Styles pour Traffic Monitor - Thème Bleu Foncé */
+
+.root {
+    -fx-font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* Alertes personnalisées */
+.welcome-alert {
+    -fx-border-color: #10b981;
+    -fx-border-width: 2;
+    -fx-background-radius: 10;
+}
+
+.error-alert {
+    -fx-border-color: #dc2626;
+    -fx-border-width: 2;
+    -fx-background-radius: 10;
+}
+
+/* Boutons avec thème bleu foncé */
+.vehicle-btn {
+    -fx-background-color: linear-gradient(to right, #1e3a8a, #1e40af);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-color: #1e3a8a;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+.analyze-btn {
+    -fx-background-color: linear-gradient(to right, #1e3a8a, #1e40af);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-color: #1e3a8a;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+.traffic-btn {
+    -fx-background-color: linear-gradient(to right, #1e3a8a, #1e40af);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-color: #1e3a8a;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+.quick-location-btn {
+    -fx-background-color: linear-gradient(to right, #1e3a8a, #1e40af);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-color: #1e3a8a;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+.precise-location-btn {
+    -fx-background-color: linear-gradient(to right, #1e3a8a, #1e40af);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-color: #1e3a8a;
+    -fx-border-width: 1px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { -fx-scale-x: 1; -fx-scale-y: 1; }
+    50% { -fx-scale-x: 1.05; -fx-scale-y: 1.05; }
+    100% { -fx-scale-x: 1; -fx-scale-y: 1; }
+}
+
+.pulse {
+    -fx-animation: pulse 2s infinite;
+}
+
+/* Scrollbars personnalisées avec thème bleu foncé */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: #1e3a8a;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #3b82f6;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #2563eb;
+}
+
+/* Styles pour les contrôles du menu bleu foncé */
+.control-panel {
+    -fx-background-color: linear-gradient(to bottom,
+        #1e3a8a 0%,
+        #1e40af 50%,
+        #1e3a8a 100%);
+    -fx-background-radius: 15px;
+    -fx-border-color: linear-gradient(to bottom, #1e3a8a, #1e40af);
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(30, 58, 138, 0.3), 15, 0.3, 0, 5);
+}
+
+.section-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #e0f2fe;
+    -fx-padding: 15px 0 8px 0;
+    -fx-border-color: linear-gradient(to right, #3b82f6, #1e40af);
+    -fx-border-width: 0 0 2px 0;
+    -fx-background-color: linear-gradient(to right, rgba(59, 130, 246, 0.2), rgba(30, 64, 175, 0.2));
+    -fx-background-radius: 10px;
+    -fx-padding: 12px 15px 8px 15px;
+    -fx-effect: dropshadow(gaussian, rgba(59, 130, 246, 0.3), 8, 0.3, 0, 2);
+}
